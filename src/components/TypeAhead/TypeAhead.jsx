@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import PropTypes from 'prop-types';
 import Input from '../Input';
 import classes from './TypeAhead.module.scss';
 
@@ -111,3 +112,6 @@ const TypeAhead = ({ colorsList }) => {
     )
 }
 export default TypeAhead;
+TypeAhead.propTypes = {
+    colorsList: PropTypes.arrayOf(PropTypes.string)
+}
