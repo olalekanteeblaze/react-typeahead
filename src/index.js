@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import TypeAhead from "./components/TypeAhead";
 
 const colorsList = [
   "AliceBlue",
@@ -153,8 +154,8 @@ const colorsList = [
 ];
 
 ReactDOM.render(
-  {
-    /* <YourComponentGoesHere /> */
-  },
+    <TypeAhead 
+      colorsList={colorsList}
+    />,
   document.getElementById("root")
 );
